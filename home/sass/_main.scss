@@ -11,7 +11,6 @@ main {
 
         &:hover {
           text-decoration: underline;
-          // font-size: $h3-font-size;
           color: lighten($primary-color, 30%);
         }
       }

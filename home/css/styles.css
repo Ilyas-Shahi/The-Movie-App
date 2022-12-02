@@ -41,12 +41,12 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1rem, 5vw, 1.3rem);
+  font-size: clamp(1rem, 4vw, 1.3rem);
   font-weight: 500;
 }
 
 h5 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
+  font-size: clamp(1rem, 4vw, 1.2rem);
   font-weight: 400;
 }
 
@@ -134,7 +134,7 @@ main .container {
   padding-top: 2.8rem;
 }
 main .container h3 #other-movies-option {
-  font-size: clamp(1rem, 5vw, 1.3rem);
+  font-size: clamp(1rem, 4vw, 1.3rem);
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -196,7 +196,7 @@ main .pagination {
   justify-content: center;
 }
 main .pagination #page {
-  font-size: clamp(1rem, 5vw, 1.3rem);
+  font-size: clamp(1rem, 4vw, 1.3rem);
   background-color: rgba(255, 255, 255, 0.066);
   border: 1px solid rgba(255, 255, 255, 0.066);
   padding: 0.8rem 1.4rem;
@@ -236,7 +236,7 @@ header .container .search-input input {
   width: 88%;
   height: 100%;
   background: transparent;
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 4vw, 1.4rem);
   color: #fff;
   margin-left: 0.5rem;
 }
