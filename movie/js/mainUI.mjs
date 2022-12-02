@@ -11,8 +11,6 @@ const duration = document.getElementById('duration');
 const budget = document.getElementById('budget');
 const revenue = document.getElementById('revenue');
 
-const id = new URL(window.location).searchParams.get('id');
-
 async function mainUI(method, page, extraQuery) {
   const data = await fetchData(method, page, extraQuery);
 

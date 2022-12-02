@@ -147,7 +147,7 @@ main .container .hero-section {
 main .container .hero-section #poster {
   border-radius: 0.6rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 760px) {
   main .container .hero-section #poster {
     width: 45%;
   }
