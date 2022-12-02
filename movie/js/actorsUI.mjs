@@ -15,7 +15,7 @@ async function actorsUI(method, page, extraQuery) {
       src="${
         cast.profile_path
           ? `http://image.tmdb.org/t/p/w154${cast.profile_path}`
-          : '../../no_image.jpg'
+          : '../no_image.jpg'
       }"
       class="actor-img"/>
 
