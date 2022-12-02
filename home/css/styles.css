@@ -248,7 +248,10 @@ header .container .search-input #cancel-search {
 
 body {
   min-height: 100%;
-  background: linear-gradient(0deg, #202020 78%, rgba(32, 32, 32, 0.62) 100%), url("https://images.unsplash.com/photo-1574267432553-4b4628081c31");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: linear-gradient(0deg, #202020 78%, rgba(32, 32, 32, 0.62) 100%), url("https://images.unsplash.com/photo-1574267432553-4b4628081c31") top/100% no-repeat;
+}
+@media (max-width: 820px) {
+  body {
+    background: linear-gradient(0deg, #202020 94%, rgba(32, 32, 32, 0.62) 100%), url("https://images.unsplash.com/photo-1574267432553-4b4628081c31") top center/150% no-repeat;
+  }
 }

@@ -9,7 +9,16 @@ body {
       $body-color 78%,
       fade-out($body-color, 0.38) 100%
     ),
-    url('https://images.unsplash.com/photo-1574267432553-4b4628081c31');
-  background-size: 100%;
-  background-repeat: no-repeat;
+    url('https://images.unsplash.com/photo-1574267432553-4b4628081c31') top/100%
+      no-repeat;
+
+  @media (max-width: 820px) {
+    background: linear-gradient(
+        0deg,
+        $body-color 94%,
+        fade-out($body-color, 0.38) 100%
+      ),
+      url('https://images.unsplash.com/photo-1574267432553-4b4628081c31') top
+        center/150% no-repeat;
+  }
 }
