@@ -165,7 +165,7 @@ main .container .hero-section .hero-content .rating-sec {
   border-radius: 40rem;
 }
 main .container .hero-section .hero-content .rating-sec #rating {
-  font-size: 1.8rem;
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
 }
 main .container .hero-section .hero-content #description {
   margin: 2rem auto;
@@ -177,10 +177,20 @@ main .container .hero-section .hero-content #genres {
   margin: 1rem 0;
   color: #202020;
 }
+@media (max-width: 500px) {
+  main .container .hero-section .hero-content #genres {
+    gap: 0.5rem;
+  }
+}
 main .container .hero-section .hero-content #genres li {
   background-color: #01d277;
   padding: 0.3rem 1rem;
   border-radius: 20rem;
+}
+@media (max-width: 500px) {
+  main .container .hero-section .hero-content #genres li {
+    padding: 0.1rem 0.5rem;
+  }
 }
 main .container .hero-section .hero-content .other-info {
   width: 100%;
