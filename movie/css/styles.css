@@ -270,6 +270,11 @@ header .container .search-input input {
   gap: 1rem;
   margin: 1.2rem 0;
 }
+@media (max-width: 830px) {
+  .actors-section #actors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
 .actors-section #actors-grid .card {
   background-color: rgba(255, 255, 255, 0.066);
   border-radius: 0.8rem;

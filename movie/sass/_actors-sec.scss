@@ -9,6 +9,10 @@
     gap: 1rem;
     margin: 1.2rem 0;
 
+    @media (max-width: 830px) {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
     .card {
       background-color: $semi-transp-white;
       border-radius: 0.8rem;
