@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/*  --- BASE ---  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #202020;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1rem, 5vw, 1.1rem);
+  font-weight: 400;
+  color: #eee;
+}
+
+h1,
+h2,
+h3 {
+  color: #01d277;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 5vw, 3.4rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 5vw, 2.6rem);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  font-weight: 500;
+}
+
+h5 {
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+  transition: 0.3s;
+}
+a:hover {
+  color: #01d277;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+/*  --- BUTTONS ---  */
+.btn {
+  display: inline-block;
+  background-color: #01d277;
+  color: #fff;
+  padding: clamp(0.75rem, 5vw, 1rem) clamp(1.25rem, 5vw, 2rem);
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1rem, 5vw, 1.1rem);
+  font-weight: 500;
+  border: 2px solid #01d277;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #01d277;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.btn-outline {
+  background-color: transparent;
+  color: #01d277;
+  border: 2px solid #01d277;
+}
+.btn-outline:hover, .btn-outline:focus {
+  background-color: #01d277;
+  color: #fff;
+}
+.btn i {
+  margin-right: 0.5rem;
+}
+
+/*   --- Reuseable CSS Classes ---   */
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media (max-width: 1315px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+main .container {
+  border-top: 1px solid rgba(255, 255, 255, 0.066);
+  padding-top: 2.8rem;
+}
+main .container .hero-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  main .container .hero-section {
+    display: block;
+  }
+}
+main .container .hero-section #poster {
+  border-radius: 0.6rem;
+}
+@media (max-width: 500px) {
+  main .container .hero-section #poster {
+    width: 45%;
+  }
+}
+main .container .hero-section .hero-content {
+  text-align: center;
+  padding: 3rem 0;
+}
+main .container .hero-section .hero-content .rating-sec {
+  width: max-content;
+  background-color: #2e835e;
+  margin: 1.2rem auto;
+  padding: 0.3rem 2rem;
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  border-radius: 40rem;
+}
+main .container .hero-section .hero-content .rating-sec #rating {
+  font-size: 1.8rem;
+}
+main .container .hero-section .hero-content #description {
+  margin: 2rem auto;
+  width: 85%;
+}
+main .container .hero-section .hero-content #genres {
+  display: inline-flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  color: #202020;
+}
+main .container .hero-section .hero-content #genres li {
+  background-color: #01d277;
+  padding: 0.3rem 1rem;
+  border-radius: 20rem;
+}
+main .container .hero-section .hero-content .other-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.066);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.066);
+  padding: 1rem 0;
+  margin-top: 4rem;
+}
+@media (max-width: 500px) {
+  main .container .hero-section .hero-content .other-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+main .container .hero-section .hero-content .other-info div {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+main .container .hero-section .hero-content #back-btn {
+  margin-top: 4rem;
+  padding: clamp(0.5rem, 5vw, 0.7rem) clamp(0.8rem, 5vw, 1.6rem);
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.2rem;
+}
+header .container .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+header .container .logo img {
+  border-radius: 5px;
+  width: 120px;
+}
+@media (max-width: 500px) {
+  header .container .logo img {
+    width: 75px;
+  }
+}
+header .container .search-input {
+  width: 80vw;
+  max-width: 520px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.066);
+  border-radius: 2rem;
+  margin-top: 2.8rem;
+  padding: 0.5rem 1rem;
+  font-size: clamp(1rem, 5vw, 1.1rem);
+  color: #01d277;
+}
+header .container .search-input input {
+  width: 90%;
+  height: 100%;
+  background: transparent;
+  font-size: clamp(1rem, 5vw, 1.1rem);
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.actors-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.066);
+  padding: 2rem 0;
+  margin-top: 2.8rem;
+}
+.actors-section #actors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.actors-section #actors-grid .card {
+  background-color: rgba(255, 255, 255, 0.066);
+  border-radius: 0.8rem;
+}
+.actors-section #actors-grid .card img {
+  border-radius: 0.8rem;
+  width: 100%;
+}
+.actors-section #actors-grid .card .actor-name {
+  margin: 0.6rem 0.8rem 0;
+}
+@media (max-width: 500px) {
+  .actors-section #actors-grid .card .actor-name {
+    font-size: 1rem;
+  }
+}
+.actors-section #actors-grid .card .character {
+  margin: 0 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #a2a2a2;
+}
+@media (max-width: 500px) {
+  .actors-section #actors-grid .card .character {
+    font-size: 0.8rem;
+  }
+}
+
+.trailer-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.066);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.066);
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+.trailer-section h3 {
+  margin-bottom: 1.3rem;
+}
+@media (max-width: 600px) {
+  .trailer-section iframe#trailer-iframe {
+    height: 260px;
+  }
+}
+
+body {
+  min-height: 100%;
+  background: linear-gradient(0deg, #202020 60%, rgba(32, 32, 32, 0.7) 75%), url("https://images.unsplash.com/photo-1574267432553-4b4628081c31");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

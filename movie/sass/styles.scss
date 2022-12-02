@@ -1,0 +1,16 @@
+@import '../../root';
+@import './main';
+@import './header';
+@import './actors-sec';
+
+body {
+  min-height: 100%;
+  background: linear-gradient(
+      0deg,
+      $body-color 60%,
+      fade-out($body-color, 0.3) 75%
+    ),
+    url('https://images.unsplash.com/photo-1574267432553-4b4628081c31');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

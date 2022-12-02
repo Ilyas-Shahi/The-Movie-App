@@ -1,0 +1,15 @@
+@import '../../root';
+@import './main';
+@import './header';
+
+body {
+  min-height: 100%;
+  background: linear-gradient(
+      0deg,
+      $body-color 78%,
+      fade-out($body-color, 0.38) 100%
+    ),
+    url('https://images.unsplash.com/photo-1574267432553-4b4628081c31');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

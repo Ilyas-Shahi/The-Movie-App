@@ -1,0 +1,86 @@
+main {
+  .container {
+    border-top: 1px solid $semi-transp-white;
+    padding-top: 2.8rem;
+
+    .hero-section {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      text-align: center;
+
+      @media (max-width: 500px) {
+        display: block;
+      }
+
+      #poster {
+        border-radius: 0.6rem;
+        @media (max-width: 500px) {
+          width: 45%;
+        }
+      }
+
+      .hero-content {
+        text-align: center;
+        padding: 3rem 0;
+
+        .rating-sec {
+          width: max-content;
+          background-color: $secondary-color;
+          margin: 1.2rem auto;
+          padding: 0.3rem 2rem;
+          font-size: $h4-font-size;
+          border-radius: 40rem;
+
+          #rating {
+            font-size: 1.8rem;
+          }
+        }
+
+        #description {
+          margin: 2rem auto;
+          width: 85%;
+        }
+
+        #genres {
+          display: inline-flex;
+          gap: 1rem;
+          margin: 1rem 0;
+          color: $body-color;
+
+          li {
+            background-color: $primary-color;
+            padding: 0.3rem 1rem;
+            border-radius: 20rem;
+          }
+        }
+
+        .other-info {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          justify-items: center;
+          gap: 1rem;
+          border-top: 1px solid $semi-transp-white;
+          border-bottom: 1px solid $semi-transp-white;
+          padding: 1rem 0;
+          margin-top: 4rem;
+
+          @media (max-width: 500px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          div {
+            display: inline-flex;
+            gap: 0.5rem;
+          }
+        }
+
+        #back-btn {
+          margin-top: 4rem;
+          padding: clamp(0.5rem, 5vw, 0.7rem) clamp(0.8rem, 5vw, 1.6rem);
+        }
+      }
+    }
+  }
+}
