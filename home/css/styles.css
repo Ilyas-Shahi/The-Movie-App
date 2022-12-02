@@ -28,7 +28,7 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(1.8rem, 5vw, 3.4rem);
+  font-size: clamp(1.5rem, 5vw, 3.4rem);
 }
 
 h2 {
@@ -195,6 +195,11 @@ main .pagination {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 488px) {
+  main .pagination {
+    display: block;
+  }
+}
 main .pagination #page {
   font-size: clamp(1rem, 4vw, 1.3rem);
   background-color: rgba(255, 255, 255, 0.066);
@@ -202,6 +207,12 @@ main .pagination #page {
   padding: 0.8rem 1.4rem;
   margin: 0 0.8rem;
   border-radius: 0.4rem;
+}
+@media (max-width: 488px) {
+  main .pagination #page {
+    margin: 0.8rem auto;
+    width: fit-content;
+  }
 }
 
 header .container {
@@ -217,9 +228,19 @@ header .container .logo {
   align-items: center;
   gap: 1.5rem;
 }
+@media (max-width: 500px) {
+  header .container .logo {
+    gap: 1rem;
+  }
+}
 header .container .logo img {
   border-radius: 5px;
   width: 120px;
+}
+@media (max-width: 500px) {
+  header .container .logo img {
+    width: 80px;
+  }
 }
 header .container .search-input {
   width: 80vw;
@@ -231,6 +252,11 @@ header .container .search-input {
   padding: 0.5rem 1rem;
   font-size: clamp(1rem, 5vw, 1.1rem);
   color: #01d277;
+}
+@media (max-width: 500px) {
+  header .container .search-input {
+    height: 40px;
+  }
 }
 header .container .search-input input {
   width: 88%;

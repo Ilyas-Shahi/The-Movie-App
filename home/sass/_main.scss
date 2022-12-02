@@ -77,6 +77,10 @@ main {
     display: flex;
     justify-content: center;
 
+    @media (max-width: 488px) {
+      display: block;
+    }
+
     #page {
       font-size: $h4-font-size;
       background-color: $semi-transp-white;
@@ -84,6 +88,11 @@ main {
       padding: 0.8rem 1.4rem;
       margin: 0 0.8rem;
       border-radius: 0.4rem;
+
+      @media (max-width: 488px) {
+        margin: 0.8rem auto;
+        width: fit-content;
+      }
     }
   }
 }

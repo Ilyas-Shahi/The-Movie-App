@@ -10,10 +10,17 @@ header {
       justify-content: center;
       align-items: center;
       gap: 1.5rem;
+      @media (max-width: 500px) {
+        gap: 1rem;
+      }
 
       img {
         border-radius: 5px;
         width: 120px;
+
+        @media (max-width: 500px) {
+          width: 80px;
+        }
       }
     }
 
@@ -27,6 +34,10 @@ header {
       padding: 0.5rem 1rem;
       font-size: $normal-font-size;
       color: $primary-color;
+
+      @media (max-width: 500px) {
+        height: 40px;
+      }
 
       input {
         width: 88%;
