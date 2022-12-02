@@ -22,7 +22,7 @@ async function cardsUI(method, page, extraQuery) {
     card.className = 'card';
 
     card.innerHTML = `
-      <a href="/movie/?id=${movie.id}"><img
+      <a href="./movie/?id=${movie.id}"><img
         class="card-img"
         src="${
           movie.poster_path
@@ -37,7 +37,7 @@ async function cardsUI(method, page, extraQuery) {
           ).toFixed(1)}
         </p>
 
-        <a href="/movie/?id=${movie.id}"><h5 class="card-content_title">${
+        <a href="./movie/?id=${movie.id}"><h5 class="card-content_title">${
       movie.title
     }</h5></a>
       </div>
