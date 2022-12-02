@@ -27,7 +27,7 @@ async function cardsUI(method, page, extraQuery) {
         src="${
           movie.poster_path
             ? `http://image.tmdb.org/t/p/w500${movie.poster_path}`
-            : '../no_image.jpg'
+            : './no_image.jpg'
         }"
       /></a>
       <div class="card-content">
