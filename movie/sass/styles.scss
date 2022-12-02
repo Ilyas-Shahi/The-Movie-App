@@ -12,4 +12,8 @@ body {
     ),
     url('https://images.unsplash.com/photo-1574267432553-4b4628081c31') top
       center/100% no-repeat;
+
+  @media (max-width: 920px) {
+    background-size: 50%;
+  }
 }
