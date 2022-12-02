@@ -20,10 +20,10 @@ async function mainUI(method, page, extraQuery) {
 
   document.body.style.background = `
   linear-gradient(0deg, #202020 70%, #202020b3 80%), 
-  url('https://image.tmdb.org/t/p/w1280${data.backdrop_path}')
+  url('https://image.tmdb.org/t/p/w1280${data.backdrop_path}') top center/100% no-repeat
   `;
-  document.body.style.backgroundSize = '100%';
-  document.body.style.backgroundRepeat = 'no-repeat';
+  // document.body.style.backgroundSize = '100%';
+  // document.body.style.backgroundRepeat = 'no-repeat';
 
   poster.setAttribute(
     'src',

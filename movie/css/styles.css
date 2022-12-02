@@ -305,7 +305,5 @@ header .container .search-input input {
 
 body {
   min-height: 100%;
-  background: linear-gradient(0deg, #202020 60%, rgba(32, 32, 32, 0.7) 75%), url("https://images.unsplash.com/photo-1574267432553-4b4628081c31");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: linear-gradient(0deg, #202020 60%, rgba(32, 32, 32, 0.7) 75%), url("https://images.unsplash.com/photo-1574267432553-4b4628081c31") top center/100% no-repeat;
 }
